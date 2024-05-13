@@ -6,6 +6,7 @@ import NoMatch from "./pages/NoMatch";
 import Dashboard from "./pages/Dashboard";
 import Empty from "./pages/Empty";
 import Sample from "./pages/Sample";
+import Fixture from "./pages/Fixture";
 
 export const router = createBrowserRouter([
     {
@@ -17,13 +18,13 @@ export const router = createBrowserRouter([
                 element: <Dashboard />,
             },
             {
-                path: "sample",
-                element: <Sample />,
+                element: <Fixture />,
+                path: "fixture/:tournament/:match",
             },
             {
-                path: "empty",
-                element: <Empty />,
-            },
+                element: <Dashboard />,
+                path: "fixture/:tournament",
+            }
         ],
     },
     {

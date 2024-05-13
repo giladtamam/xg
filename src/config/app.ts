@@ -11,7 +11,7 @@ interface AppConfig {
 }
 
 export const appConfig: AppConfig = {
-    name: "Sample App",
+    name: "",
     github: {
         title: "React Shadcn Starter",
         url: "https://github.com/hayyi2/react-shadcn-starter",
